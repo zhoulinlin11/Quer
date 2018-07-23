@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.zll.quer.SlidingMenuView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/smv_test"
+    tools:context="com.example.zll.quer.MainActivity">
+
+        <!-- 左侧菜单 -->
+        <include layout="@layout/left_meun" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#03A9F4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/sdv"
+            android:layout_margin="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="onToggle"
+            android:src="@mipmap/raw_1499936862"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="推荐"
+            android:textColor="#ffffff"
+            />
+        <ImageView
+            android:id="@+id/xia"
+            android:layout_margin="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/raw_1500034665"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/fragment"
+        ></FrameLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/group"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/recom"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:text="推荐"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cross"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="段子"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/video"
+            android:text="视频"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/funny"
+            android:gravity="center"
+            android:text="趣图"
+            android:layout_weight="1"
+            android:button="@null"
+            />
+    </RadioGroup>
+</LinearLayout>
+
+</com.example.zll.quer.SlidingMenuView>
